@@ -21,4 +21,31 @@
     margin: 20px 0px;
     overflow-x: scroll;
 }
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-menu-list-item img{
+    width:7.5vw;
+    min-width: 80px;
+    cursor:pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.explore-menu-list-item p{
+    margin-top:10px;
+    color:#747474;
+    font-size:max(1.4vw,16px);/*max(1.4vw,16px) in the sense vw means viewport width as vh it will also adapt dynamically based on screen size, here 1.4vw means 1.4 % of screen width now as we used max it will take only maximum value always i.e if we are using mobile vw will be smaller than 16px so widh will be 16px , if we view rhe webpage in pc 1.4vw will be greater than 16px si 1.4vw width will be taken , this is to make webpage responsive and prevent from becoming too small i.e if we use vw alone then it will be too small in mobile screens*/
+    cursor: pointer;
+}
+.explore-menu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border:none;
+}
+.explore-menu-list-item .active{
+    border: 4px solid purple;
+    padding:2px;
+
+}
 
