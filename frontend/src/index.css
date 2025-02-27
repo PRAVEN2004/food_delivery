@@ -1,13 +1,30 @@
 /*basic properties for our complete project*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 *{
   padding:0;
   margin:0;
-  box-sizing: border-box;
+  box-sizing: border-box;/* Without border-box → The box becomes 250px wide (200 + padding + border)! with borderbox :The box stays exactly 200px! 😎🔥*/
+  font-family: Outfit;
+
 }
 body{
-  min-height: 100vh;
+  min-height: 100vh;/*vh means viewport height i.eheight will be set according to screen size*/
 }
 a{
   text-decoration: none;
   color: inherit;
 }
+.app{
+  width:80%;
+  margin:auto;
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity:1;
+  }
+  
+}
+

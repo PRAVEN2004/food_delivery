@@ -1,0 +1,41 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;/*auto allows elements to space dynamically based on the available space*/
+    background: url('header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.header-contents{
+    position:absolute;
+    display: flex;
+    flex-direction: column;/*makes flex box arrange items vertcally but default arrangement of items in flex box is horizontal*/
+    align-items: start;
+    gap: 1.5vw;/*gap is used for dynamic spacing in flex box*/
+    max-width: 50%;/*width is fixed width but max width is maximum width in which element can shrink in that range but cannot exceed that max width*/
+    bottom:10%;
+    left:6vw;
+    animation: fadeIn 3s;
+
+}
+.header-contents h2{
+    font-weight:500;
+    color: white;
+    font-size: max(4.5vw,22px);
+
+}
+.header-contents p{
+    color: white;
+    font-size: 1vw;
+}
+.header-contents button{
+    border:none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+
+}
+
+
