@@ -5,6 +5,7 @@
   margin:0;
   box-sizing: border-box;/* Without border-box → The box becomes 250px wide (200 + padding + border)! with borderbox :The box stays exactly 200px! 😎🔥*/
   font-family: Outfit;
+  scroll-behavior: smooth;
 
 }
 body{
