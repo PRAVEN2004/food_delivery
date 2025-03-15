@@ -1,3 +1,4 @@
+//to store the models in the data base
 import mongoose from "mongoose";
 
 const foodSchema = new mongoose.Schema({

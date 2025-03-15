@@ -13,15 +13,16 @@ app.use(express.json())//using this middleware whenever we will get the request 
 app.use(cors())//using this we can sccess the backend from frontend
 
 //db connection
-connectDB();
+connectDB();//imported from config (db.js)
 
 //api endpoints
 app.use("/api/food",foodRouter)
+app.use("/images",express.static('uploads'))
 
-app.get("/",(req,res)=>{    //spp.get() is a http method using which we can request the data from the server
+app.get("/",(req,res)=>{    //app.get() is a http method using which we can request the data from the server
 res.send("API Working")
 })
-app.listen(port,()=>{
+app.listen(port,()=>{       //to run the express server
     console.log(`Server Started on http://localhost:${port}`)
 })
 //mongodb+srv://PRAVENKUMAR:pkmongodb@cluster0.m6oyk.mongodb.net/?
