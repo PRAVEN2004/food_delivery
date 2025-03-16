@@ -4,6 +4,7 @@ import { connectDB } from "./config/db.js"
 import foodRouter from "./routes/foodRoute.js"
 import userRouter from "./routes/userRoute.js"
 import 'dotenv/config'
+import cartRouter from "./routes/cartRoute.js"
 
  //creation of express server:
 //app config
@@ -20,6 +21,7 @@ connectDB();//imported from config (db.js)
 app.use("/api/food",foodRouter)
 app.use("/images",express.static('uploads'))
 app.use("/api/user",userRouter)
+app.use("/api/cart",cartRouter)
 app.get("/",(req,res)=>{    //app.get() is a http method using which we can request the data from the server
 res.send("API Working")
 })
